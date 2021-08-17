@@ -42,7 +42,7 @@ class _HomeState extends State<Home> {
                     child: TextFormField(
                       obscureText: false,
                       decoration: InputDecoration(
-                        hintText: 'Nome no cartão',
+                        hintText: 'Nome cartão',
                       ),
                     ),
                   )
@@ -54,14 +54,14 @@ class _HomeState extends State<Home> {
                 children: [
                   Icon(
                     Icons.credit_card,
-                    color: Colors.black,
-                    size: 24,
+                    color: Colors.green,
+                    size: 30,
                   ),
                   Expanded(
                     child: TextFormField(
                       obscureText: false,
                       decoration: InputDecoration(
-                        hintText: 'Número do cartão',
+                        hintText: 'Número cartão',
                       ),
                     ),
                   ),
@@ -104,7 +104,7 @@ class _HomeState extends State<Home> {
                     children: [
                       Icon(
                         Icons.business,
-                        size: 24,
+                        size: 30,
                       ),
                       Expanded(
                         child: TextFormField(
@@ -120,7 +120,7 @@ class _HomeState extends State<Home> {
               Row(
                 children: [
                   Text(
-                    'salvar informações para compras futuras',
+                    'salvar informações de credencias',
                   ),
                   Checkbox(value: _selecionarvalor, onChanged: (_valorcheck){
                     setState(() {
